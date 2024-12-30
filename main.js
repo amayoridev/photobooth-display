@@ -176,7 +176,7 @@ app.get('/u', (req, res) => {
       <h1>Upload a Photo</h1>
       <div class="upload-form">
         <form action="/upload" method="POST" enctype="multipart/form-data">
-          <input type="text" name="authId" placeholder="Enter Authorization ID" required>
+          <input type="text" name="authId" autocomplete="off" placeholder="Enter Authorization ID" required>
           <input type="file" name="photo" accept="image/*" required>
           <button type="submit">Upload Photo</button>
         </form>
